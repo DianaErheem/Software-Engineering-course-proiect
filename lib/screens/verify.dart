@@ -8,7 +8,11 @@ class Verification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(elevation: 0,backgroundColor: const Color(0xFFF9FAFB),),
+      appBar: PreferredSize(
+          child: AppBar(
+            backgroundColor: const Color(0xFFF9FAFB),
+          ),
+          preferredSize: Size.fromHeight(100)),
       extendBodyBehindAppBar: true,
       body: Stack(
         children: [
@@ -63,6 +67,7 @@ class Verification extends StatelessWidget {
                                     decoration: InputDecoration(
                                       label: Text("Phone number"),
                                       hintText: '+1 (415) 578-8033',
+                                      suffixIcon: Icon(Icons.check,color: Colors.green,),
                                       border: UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Colors.blue,

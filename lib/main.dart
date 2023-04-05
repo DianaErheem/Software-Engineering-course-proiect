@@ -59,7 +59,6 @@ class MyApp extends StatelessWidget {
         "/sign_up_screen" : (context) => const SignUpScreen(),
         "/verify" : (context) =>  const Verification(),
         "/verify_code" : (context) =>  const VerificationCode(),
-
       },
     );
   }
